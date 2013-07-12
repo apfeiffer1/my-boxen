@@ -90,6 +90,7 @@ node default {
   # A few extra tools.
   include vagrant
   include osxfuse
+  include iterm2::stable
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
