@@ -33,5 +33,6 @@ github "sudo",       "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "vagrant" "2.0.7"
-github "osxfuse" "1.1.0"
+github "vagrant",    "2.0.7"
+github "osxfuse",    "1.1.0"
+github "iterm2",     "1.0.2"
