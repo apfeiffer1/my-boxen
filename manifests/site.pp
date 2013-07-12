@@ -82,9 +82,14 @@ node default {
       'findutils',
       'gnu-tar',
       'tmux',
-      'task'
+      'task',
+      'mutt'
     ]:
   }
+
+  # A few extra tools.
+  include vagrant
+  include osxfuse
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
