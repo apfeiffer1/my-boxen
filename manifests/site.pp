@@ -91,6 +91,8 @@ node default {
   include vagrant
   include osxfuse
   include iterm2::stable
+  include vlc
+  include chrome
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,

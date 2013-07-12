@@ -39,6 +39,11 @@ GITHUBTARBALL
     hub (1.0.3)
 
 GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.2)
@@ -89,6 +94,11 @@ GITHUBTARBALL
     vagrant (2.0.7)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vlc
+  specs:
+    vlc (1.0.3)
+
+GITHUBTARBALL
   remote: cprice404/puppetlabs-inifile
   specs:
     inifile (1.0.0)
@@ -106,6 +116,7 @@ DEPENDENCIES
   homebrew (= 1.1.2)
   hub (= 1.0.0)
   inifile (= 0.9.0)
+  iterm2 (= 1.0.2)
   nginx (= 1.4.0)
   nodejs (= 2.2.0)
   osxfuse (= 1.1.0)
@@ -114,3 +125,4 @@ DEPENDENCIES
   stdlib (= 4.0.2)
   sudo (= 1.0.0)
   vagrant (= 2.0.7)
+  vlc (= 1.0.3)
