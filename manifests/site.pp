@@ -100,4 +100,7 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+  git::config::global { 'color.interactive': value  => 'true'}
+  git::config::global { 'color.diff': value  => 'true'}
+  git::config::global { 'push.default': value  => 'simple'}
 }
