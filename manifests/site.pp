@@ -94,6 +94,7 @@ node default {
   include vlc
   include chrome
   include sublime_text_2
+  include heroku
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
