@@ -96,6 +96,7 @@ node default {
   include sublime_text_2
   include heroku
   include python
+  include irssi
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
@@ -104,5 +105,4 @@ node default {
   git::config::global { 'color.interactive': value  => 'true'}
   git::config::global { 'color.diff': value  => 'true'}
   git::config::global { 'push.default': value  => 'simple'}
-  python::pip {"fabric": ensure => present}
 }
