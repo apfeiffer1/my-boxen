@@ -83,7 +83,8 @@ node default {
       'gnu-tar',
       'tmux',
       'task',
-      'mutt'
+      'mutt',
+      'urlview',
     ]:
   }
 
@@ -96,6 +97,7 @@ node default {
   include sublime_text_2
   include heroku
   include python
+  include python::virtualenvwrapper
   include irssi
 
   file { "${boxen::config::srcdir}/our-boxen":
@@ -105,4 +107,6 @@ node default {
   git::config::global { 'color.interactive': value  => 'true'}
   git::config::global { 'color.diff': value  => 'true'}
   git::config::global { 'push.default': value  => 'simple'}
+#  python::mkvirtualenv {"/User/ktf/virtualenvs/fabric":}
+#  python::pip { 'Fabric': virtualenv => "/User/ktf/virtualenvs/fabric"}
 }
