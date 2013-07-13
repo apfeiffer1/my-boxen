@@ -18,4 +18,16 @@ notify { 'class people::ktf declared': }
     target  => "${home}/dotfiles/tmux.conf",
     require => Repository["${home}/dotfiles"],
   }
+  file { "${home}/.taskrc":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${home}/dotfiles/taskrc",
+    require => Repository["${home}/dotfiles"],
+  }
+  file { "${home}/.vimrc":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${home}/dotfiles/vimrc",
+    require => Repository["${home}/dotfiles"],
+  }
 }
