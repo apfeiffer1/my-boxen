@@ -93,6 +93,7 @@ node default {
   include iterm2::stable
   include vlc
   include chrome
+  include sublime_text_2
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
