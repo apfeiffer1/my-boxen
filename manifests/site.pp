@@ -87,6 +87,14 @@ node default {
       'urlview',
     ]:
   }
+  
+  package {
+      [
+       "Fabric",
+       'pygithub3',
+      ]:
+    provider => pip
+  }
 
   # A few extra tools.
   include vagrant
@@ -99,6 +107,9 @@ node default {
   include python
   include python::virtualenvwrapper
   include irssi
+  include sourcetree
+  include groovy
+  include encfs
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
@@ -107,6 +118,9 @@ node default {
   git::config::global { 'color.interactive': value  => 'true'}
   git::config::global { 'color.diff': value  => 'true'}
   git::config::global { 'push.default': value  => 'simple'}
+  
+  class { 'nodejs::global': version => 'v0.10.5' }
+  nodejs::module { ['hubot', 'coffee-script']: node_version => 'v0.10' }
 #  python::mkvirtualenv {"/User/ktf/virtualenvs/fabric":}
 #  python::pip { 'Fabric': virtualenv => "/User/ktf/virtualenvs/fabric"}
 }
