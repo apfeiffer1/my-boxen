@@ -104,6 +104,11 @@ GITHUBTARBALL
     ruby (6.5.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sourcetree
+  specs:
+    sourcetree (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
   specs:
     sublime_text_2 (1.1.1)
@@ -139,6 +144,16 @@ GITHUBTARBALL
     inifile (1.0.0)
 
 GITHUBTARBALL
+  remote: ktf/puppet-encfs
+  specs:
+    encfs (1.0.0)
+
+GITHUBTARBALL
+  remote: ktf/puppet-groovy
+  specs:
+    groovy (1.0.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.1.0)
@@ -147,8 +162,10 @@ DEPENDENCIES
   boxen (= 3.0.2)
   chrome (= 1.1.1)
   dnsmasq (= 1.0.0)
+  encfs (= 1.0.0)
   gcc (= 1.0.0)
   git (= 1.2.2)
+  groovy (= 1.0.0)
   heroku (= 2.0.0)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
@@ -161,6 +178,7 @@ DEPENDENCIES
   python (= 1.2.1)
   repository (= 2.0.2)
   ruby (= 4.1.0)
+  sourcetree (= 1.0.0)
   stdlib (= 4.0.2)
   sublime_text_2 (= 1.1.1)
   sudo (= 1.0.0)
