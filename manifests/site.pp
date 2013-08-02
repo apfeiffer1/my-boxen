@@ -75,6 +75,52 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  class { 'ruby::global':
+    version => '1.9.3'
+  }
+
+  ruby::gem { "jekyll for 1.9.3":
+    gem     => 'jekyll',
+    ruby    => '1.9.3',
+    version => '=1.0.3'
+  }
+
+  ruby::gem { "liquid for 1.9.3":
+    gem     => 'liquid',
+    ruby    => '1.9.3',
+    version => '=2.5.1'
+  }
+
+  ruby::gem { "redcarpet for 1.9.3":
+    gem     => 'redcarpet',
+    ruby    => '1.9.3',
+    version => '=2.2.2'
+  }
+
+  ruby::gem { "maruku for 1.9.3":
+    gem     => 'maruku',
+    ruby    => '1.9.3',
+    version => '=0.6.1'
+  }
+
+  ruby::gem { "rdiscount for 1.9.3":
+    gem     => 'rdiscount',
+    ruby    => '1.9.3',
+    version => '=1.6.8'
+  }
+
+  ruby::gem { "RedCloth for 1.9.3":
+    gem     => 'RedCloth',
+    ruby    => '1.9.3',
+    version => '=4.2.9'
+  }
+
+  ruby::gem { "kramdown for 1.9.3":
+    gem     => 'kramdown',
+    ruby    => '1.9.3',
+    version => '=1.0.2'
+  }
+
   # common, useful packages
   package {
     [
