@@ -30,6 +30,8 @@ notify { 'class people::ktf declared': }
     target  => "${home}/dotfiles/vimrc",
     require => Repository["${home}/dotfiles"],
   }
+
+  include transmission
   
   git::config::global { 'user.email': value  => 'giulio.eulisse@cern.ch'}
   git::config::global { 'user.name': value  => 'Giulio Eulisse'}
