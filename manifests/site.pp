@@ -165,7 +165,7 @@ node default {
   }
   git::config::global { 'color.interactive': value  => 'true'}
   git::config::global { 'color.diff': value  => 'true'}
-  git::config::global { 'push.default': value  => 'simple'}
+  git::config::global { 'push.default': value  => 'current'}
   
   class { 'nodejs::global': version => 'v0.10.5' }
   nodejs::module { ['hubot', 'coffee-script']: node_version => 'v0.10' }

@@ -48,8 +48,9 @@ class people::ktf {
     target  => "${home}/dotfiles/mailcap",
     require => Repository["${home}/dotfiles"],
   }
+
   include transmission
-  
+
   git::config::global { 'user.email': value  => 'giulio.eulisse@cern.ch'}
   git::config::global { 'user.name': value  => 'Giulio Eulisse'}
   git::config::global { 'user.github': value  => 'ktf'}
