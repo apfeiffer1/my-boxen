@@ -6,6 +6,10 @@ class people::ktf {
     source => 'ktf/dotfiles',
   }
 
+  repository { "${home}/dotfiles-private":
+    source => 'ktf/dotfiles-private'
+  }
+
   file { "${home}/.zshrc":
     ensure  => link,
     mode    => '0644',
@@ -28,6 +32,13 @@ class people::ktf {
     ensure  => link,
     mode    => '0644',
     target  => "${home}/dotfiles/vimrc",
+    require => Repository["${home}/dotfiles"],
+  }
+
+  file { "${home}/.muttrc":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${home}/dotfiles/muttrc",
     require => Repository["${home}/dotfiles"],
   }
 

@@ -131,6 +131,8 @@ node default {
       'task',
       'mutt',
       'urlview',
+      'links',
+      'notmuch',
     ]:
   }
   
