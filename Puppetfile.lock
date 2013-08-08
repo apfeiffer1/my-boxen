@@ -94,6 +94,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-transmission
+  specs:
+    transmission (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (2.0.7)
@@ -157,6 +162,7 @@ DEPENDENCIES
   stdlib (= 4.0.2)
   sublime_text_2 (= 1.1.1)
   sudo (= 1.0.0)
+  transmission (= 1.0.0)
   vagrant (= 2.0.7)
   vlc (= 1.0.3)
   xquartz (= 1.0.0)
