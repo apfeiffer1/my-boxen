@@ -41,6 +41,17 @@ class people::ktf {
     require => Repository["${home}/dotfiles"],
   }
 
+  file { "${home}/.mutt":
+    ensure  => directory,
+    mode    => '0755',
+  }
+
+  file { "${home}/.mutt/aliases.txt":
+    ensure  => present,
+    mode    => '0644',
+    require => File["${home}/.mutt"],
+  }
+
   file { "${home}/.mailcap":
     ensure  => link,
     mode    => '0644',
