@@ -1,5 +1,4 @@
 class people::ktf {
-  notify { 'class people::ktf declared': }
   $home     = "/Users/${::luser}"
 
   repository { "${home}/dotfiles":
