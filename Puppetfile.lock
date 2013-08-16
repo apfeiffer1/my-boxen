@@ -17,6 +17,9 @@ GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
     foreman (1.0.0)
+  remote: boxen/puppet-erlang
+  specs:
+    erlang (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -168,6 +171,7 @@ DEPENDENCIES
   chrome (= 1.1.1)
   dnsmasq (= 1.0.0)
   encfs (= 1.0.0)
+  erlang (= 1.0.1)
   gcc (= 1.0.0)
   git (= 1.2.2)
   groovy (= 1.0.0)
