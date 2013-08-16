@@ -158,6 +158,7 @@ node default {
   include sourcetree
   include groovy
   include encfs
+  include erlang
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
