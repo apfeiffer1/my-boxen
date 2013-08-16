@@ -160,6 +160,7 @@ node default {
   include groovy
   include encfs
   include erlang
+  include induction
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
