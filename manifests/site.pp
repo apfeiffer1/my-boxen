@@ -139,7 +139,7 @@ node default {
   package {
       [
        "Fabric",
-       'pygithub3',
+       'PyGithub',
       ]:
     provider => pip
   }
