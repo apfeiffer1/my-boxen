@@ -133,6 +133,7 @@ node default {
       'urlview',
       'links',
       'notmuch',
+      'swig',
     ]:
   }
   
