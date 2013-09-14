@@ -134,6 +134,7 @@ node default {
       'links',
       'notmuch',
       'swig',
+      'tup',
     ]:
   }
   
@@ -141,6 +142,7 @@ node default {
       [
        "Fabric",
        'PyGithub',
+       'leveldb',
       ]:
     provider => pip
   }
