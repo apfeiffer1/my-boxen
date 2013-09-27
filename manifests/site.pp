@@ -136,6 +136,7 @@ node default {
       'swig',
       'tup',
       'boost',
+      'mpssh',
     ]:
   }
   

@@ -59,6 +59,18 @@ class people::ktf {
     require => Repository["${home}/dotfiles"],
   }
 
+  file { "${home}/.mpssh":
+    ensure  => directory,
+    mode    => '0644',
+  }
+
+  file { "${home}/.mpssh/hosts":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${home}/dotfiles/mpssh-hosts",
+    require => [Repository["${home}/dotfiles"], File["${home}/.mpssh"]],
+  }
+
   include transmission
 
   git::config::global { 'user.email': value  => 'giulio.eulisse@cern.ch'}
