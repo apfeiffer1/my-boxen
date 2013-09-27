@@ -135,6 +135,7 @@ node default {
       'notmuch',
       'swig',
       'tup',
+      'boost',
     ]:
   }
   
