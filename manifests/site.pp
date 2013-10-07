@@ -135,6 +135,8 @@ node default {
       'notmuch',
       'swig',
       'tup',
+      'root',
+      'xerces-c',
       'boost',
       'mpssh',
     ]:
