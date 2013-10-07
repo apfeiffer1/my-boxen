@@ -72,6 +72,7 @@ class people::ktf {
   }
 
   include transmission
+  include scala
 
   git::config::global { 'user.email': value  => 'giulio.eulisse@cern.ch'}
   git::config::global { 'user.name': value  => 'Giulio Eulisse'}
