@@ -80,8 +80,8 @@ node default {
   }
 
   ruby::gem { "github-pages for 1.9.3":
-    gem     => 'github-pages',
-    ruby    => '1.9.3',
+    gem    => 'github-pages',
+    ruby   => '1.9.3',
   }
 
   # common, useful packages
@@ -96,6 +96,7 @@ node default {
       'urlview',
       'links',
       'notmuch',
+      'isync',
       'swig',
       'tup',
       'root',
