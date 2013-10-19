@@ -137,6 +137,11 @@ node default {
   include encfs
   include erlang
   include induction
+  include vim
+
+  vim::bundle { [
+    'ktf/vim-scala',
+  ]: }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
