@@ -92,7 +92,6 @@ node default {
       'gnu-tar',
       'tmux',
       'task',
-      'mutt',
       'urlview',
       'links',
       'notmuch',
@@ -103,7 +102,14 @@ node default {
       'xerces-c',
       'boost',
       'mpssh',
+      'contacts',
     ]:
+  }
+  package {"mutt":
+    ensure => latest,
+        install_options => [
+          '--with-sidebar-patch'
+        ],
   }
   
   package {

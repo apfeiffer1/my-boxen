@@ -46,6 +46,16 @@ class people::ktf {
     mode    => '0755',
   }
 
+  file { "${home}/.mutt/cache/search/tmp":
+    ensure  => directory,
+    mode    => '0644',
+  }
+
+  file { "${home}/.mutt/cache/tmp":
+    ensure  => directory,
+    mode    => '0644',
+  }
+
   file { "${home}/.mutt/aliases.txt":
     ensure  => present,
     mode    => '0644',
@@ -57,6 +67,24 @@ class people::ktf {
     mode    => '0644',
     target  => "${home}/dotfiles/mailcap",
     require => Repository["${home}/dotfiles"],
+  }
+
+  file { "${home}/.mbsyncrc":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${home}/dotfiles-private/mbsyncrc",
+    require => Repository["${home}/dotfiles-private"],
+  }
+
+  file { "${home}/Mail":
+    ensure  => directory,
+    mode    => '0644',
+  }
+
+  file { "${home}/Mail/hifi-bonsai":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/Mail"],
   }
 
   file { "${home}/.mpssh":

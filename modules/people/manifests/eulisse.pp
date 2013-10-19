@@ -54,6 +54,34 @@ class people::eulisse {
     mode    => '0644',
   }
 
+  file { "${home}/.mutt/cache/search/tmp":
+    ensure  => directory,
+    mode    => '0644',
+  }
+
+  file { "${home}/.mutt/cache/tmp":
+    ensure  => directory,
+    mode    => '0644',
+  }
+
+  file { "${home}/Mail":
+    ensure  => directory,
+    mode    => '0644',
+  }
+
+  file { "${home}/Mail/hifi-bonsai":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/Mail"],
+  }
+
+  file { "${home}/.mbsyncrc":
+    ensure  => link,
+    mode    => '0644',
+    target  => "${home}/dotfiles-private/mbsyncrc",
+    require => Repository["${home}/dotfiles-private"],
+  }
+
   file { "${home}/.mpssh/hosts":
     ensure  => link,
     mode    => '0644',
