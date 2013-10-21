@@ -46,10 +46,30 @@ class people::ktf {
     mode    => '0755',
   }
 
+  file { "${home}/.mutt/cache":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt"],
+  }
+
+  file { "${home}/.mutt/cache/search":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt/cache"],
+  }
+
   file { "${home}/.mutt/cache/search/tmp":
     ensure  => directory,
     mode    => '0644',
+    require => File["${home}/.mutt/cache/search"],
   }
+
+  file { "${home}/.mutt/cache/search/cur":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt/cache/search"],
+  }
+
 
   file { "${home}/.mutt/cache/tmp":
     ensure  => directory,
