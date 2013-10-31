@@ -127,7 +127,8 @@ node default {
   include iterm2::stable
   include vlc
   include chrome
-  include sublime_text_2
+  include sublime_text_3
+  include sublime_text_3::package_control
   include heroku
   include python
   include python::virtualenvwrapper
@@ -138,6 +139,8 @@ node default {
   include erlang
   include induction
   include vim
+  include jenkins
+  include java
 
   vim::bundle { [
     'ktf/vim-scala',

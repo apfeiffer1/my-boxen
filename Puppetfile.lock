@@ -59,6 +59,16 @@ GITHUBTARBALL
     iterm2 (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-jenkins
+  specs:
+    jenkins (0.0.7)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.0)
@@ -92,11 +102,6 @@ GITHUBTARBALL
   remote: boxen/puppet-sourcetree
   specs:
     sourcetree (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-sublime_text_2
-  specs:
-    sublime_text_2 (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -154,6 +159,11 @@ GITHUBTARBALL
     scala (1.0.0)
 
 GITHUBTARBALL
+  remote: ktf/puppet-sublime_text_3
+  specs:
+    sublime_text_3 (1.0.1)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.0.2)
@@ -174,6 +184,8 @@ DEPENDENCIES
   inifile (= 0.9.0)
   irssi (= 1.0.1)
   iterm2 (= 1.0.2)
+  java (= 1.1.0)
+  jenkins (= 0.0.7)
   nginx (= 1.4.0)
   nodejs (= 2.2.0)
   osxfuse (= 1.1.0)
@@ -183,7 +195,7 @@ DEPENDENCIES
   scala (= 1.0.0)
   sourcetree (= 1.0.0)
   stdlib (= 4.0.2)
-  sublime_text_2 (= 1.1.1)
+  sublime_text_3 (= 1.0.1)
   sudo (= 1.0.0)
   transmission (= 1.0.0)
   vagrant (= 2.0.7)
