@@ -76,6 +76,12 @@ class people::ktf {
     mode    => '0644',
   }
 
+  file { "${home}/.mutt/tmp":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt"],
+  }
+
   file { "${home}/.mutt/aliases.txt":
     ensure  => present,
     mode    => '0644',
