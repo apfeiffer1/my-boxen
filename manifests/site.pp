@@ -156,6 +156,9 @@ node default {
   
   class { 'nodejs::global': version => 'v0.10.5' }
   nodejs::module { ['hubot', 'coffee-script']: node_version => 'v0.10' }
-#  python::mkvirtualenv {"/User/ktf/virtualenvs/fabric":}
-#  python::pip { 'Fabric': virtualenv => "/User/ktf/virtualenvs/fabric"}
+
+  package {'MaxTex':
+    source => 'http://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg',
+    provider => "pkgdmg",
+  }
 }

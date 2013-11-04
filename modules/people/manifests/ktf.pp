@@ -9,6 +9,10 @@ class people::ktf {
     source => 'ktf/dotfiles-private'
   }
 
+  repository { "${home}/Library/texmf/tex/latex":
+    source => 'ktf/latex'
+  }
+
   file { "${home}/.zshrc":
     ensure  => link,
     mode    => '0644',
