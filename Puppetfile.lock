@@ -4,11 +4,6 @@ GITHUBTARBALL
     boxen (3.0.2)
 
 GITHUBTARBALL
-  remote: boxen/puppet-chrome
-  specs:
-    chrome (1.1.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
@@ -17,9 +12,6 @@ GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
     foreman (1.0.0)
-  remote: boxen/puppet-erlang
-  specs:
-    erlang (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -37,11 +29,6 @@ GITHUBTARBALL
     go (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-heroku
-  specs:
-    heroku (2.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.4.1)
@@ -50,21 +37,6 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.0.3)
-
-GITHUBTARBALL
-  remote: boxen/puppet-induction
-  specs:
-    induction (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-irssi
-  specs:
-    irssi (1.0.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-iterm2
-  specs:
-    iterm2 (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -92,16 +64,6 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-osxfuse
-  specs:
-    osxfuse (1.1.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-python
-  specs:
-    python (1.2.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.2.0)
@@ -112,69 +74,19 @@ GITHUBTARBALL
     ruby (6.5.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-sourcetree
-  specs:
-    sourcetree (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-sublime_text_2
-  specs:
-    sublime_text_2 (1.1.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-transmission
-  specs:
-    transmission (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-vagrant
-  specs:
-    vagrant (2.0.7)
-
-GITHUBTARBALL
-  remote: boxen/puppet-vim
-  specs:
-    vim (1.0.5)
-
-GITHUBTARBALL
-  remote: boxen/puppet-vlc
-  specs:
-    vlc (1.0.3)
-
-GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
-    xquartz (1.0.0)
+    xquartz (1.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-zsh
-  specs:
-    zsh (1.0.0)
-
-GITHUBTARBALL
-  remote: cprice404/puppetlabs-inifile
+  remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.0)
-
-GITHUBTARBALL
-  remote: ktf/puppet-encfs
-  specs:
-    encfs (1.0.0)
-
-GITHUBTARBALL
-  remote: ktf/puppet-groovy
-  specs:
-    groovy (1.0.0)
-
-GITHUBTARBALL
-  remote: ktf/puppet-scala
-  specs:
-    scala (1.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
@@ -183,34 +95,22 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.0.2)
-  chrome (= 1.1.1)
   dnsmasq (= 1.0.0)
-  encfs (= 1.0.0)
-  erlang (= 1.0.1)
-  gcc (= 1.0.0)
-  git (= 1.2.2)
-  groovy (= 1.0.0)
-  heroku (= 2.0.0)
-  homebrew (= 1.1.2)
-  hub (= 1.0.0)
-  induction (= 1.0.0)
-  inifile (= 0.9.0)
-  irssi (= 1.0.1)
-  iterm2 (= 1.0.2)
-  nginx (= 1.4.0)
-  nodejs (= 2.2.0)
-  osxfuse (= 1.1.0)
-  python (= 1.2.1)
-  repository (= 2.0.2)
-  ruby (= 4.1.0)
-  scala (= 1.0.0)
-  sourcetree (= 1.0.0)
-  stdlib (= 4.0.2)
-  sublime_text_2 (= 1.1.1)
+  foreman (= 1.0.0)
+  gcc (= 2.0.1)
+  git (= 1.2.5)
+  go (= 1.0.0)
+  homebrew (= 1.4.1)
+  hub (= 1.0.3)
+  inifile (= 1.0.0)
+  nginx (= 1.4.2)
+  nodejs (= 3.3.0)
+  openssl (= 1.0.0)
+  phantomjs (= 2.0.2)
+  pkgconfig (= 1.0.0)
+  repository (= 2.2.0)
+  ruby (= 6.5.0)
+  stdlib (= 4.1.0)
   sudo (= 1.0.0)
-  transmission (= 1.0.0)
-  vagrant (= 2.0.7)
-  vim (= 1.0.5)
-  vlc (= 1.0.3)
-  xquartz (= 1.0.0)
-  zsh (= 1.0.0)
+  xquartz (= 1.1.0)
+
