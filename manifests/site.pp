@@ -103,6 +103,7 @@ node default {
       'boost',
       'mpssh',
       'contacts',
+      'elinks',
     ]:
   }
   package {"mutt":
