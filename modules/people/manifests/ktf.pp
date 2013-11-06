@@ -9,6 +9,10 @@ class people::ktf {
     source => 'ktf/dotfiles-private'
   }
 
+  repository { "${home}/Library/texmf/tex/latex":
+    source => 'ktf/latex'
+  }
+
   file { "${home}/.zshrc":
     ensure  => link,
     mode    => '0644',
@@ -51,9 +55,40 @@ class people::ktf {
     mode    => '0644',
   }
 
+  file { "${home}/.mutt/cache":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt"],
+  }
+
+  file { "${home}/.mutt/cache/search":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt/cache"],
+  }
+
+  file { "${home}/.mutt/cache/search/tmp":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt/cache/search"],
+  }
+
+  file { "${home}/.mutt/cache/search/cur":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt/cache/search"],
+  }
+
+
   file { "${home}/.mutt/cache/tmp":
     ensure  => directory,
     mode    => '0644',
+  }
+
+  file { "${home}/.mutt/tmp":
+    ensure  => directory,
+    mode    => '0644',
+    require => File["${home}/.mutt"],
   }
 
   file { "${home}/.mutt/aliases.txt":

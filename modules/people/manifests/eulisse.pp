@@ -57,6 +57,13 @@ class people::eulisse {
   file { "${home}/.mutt/cache/search/tmp":
     ensure  => directory,
     mode    => '0644',
+    require => "${home}/.mutt/cache/search",
+  }
+
+  file { "${home}/.mutt/cache/search":
+    ensure  => directory,
+    mode    => '0644',
+    require => "${home}/.mutt/cache",
   }
 
   file { "${home}/.mutt/cache/tmp":

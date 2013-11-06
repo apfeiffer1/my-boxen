@@ -127,7 +127,8 @@ node default {
   include iterm2::stable
   include vlc
   include chrome
-  include sublime_text_2
+  include sublime_text_3
+  include sublime_text_3::package_control
   include heroku
   include python
   include python::virtualenvwrapper
@@ -138,6 +139,8 @@ node default {
   include erlang
   include induction
   include vim
+  include jenkins
+  include java
 
   vim::bundle { [
     'ktf/vim-scala',
@@ -153,6 +156,9 @@ node default {
   
   class { 'nodejs::global': version => 'v0.10.5' }
   nodejs::module { ['hubot', 'coffee-script']: node_version => 'v0.10' }
-#  python::mkvirtualenv {"/User/ktf/virtualenvs/fabric":}
-#  python::pip { 'Fabric': virtualenv => "/User/ktf/virtualenvs/fabric"}
+
+  package {'MaxTex':
+    source => 'http://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg',
+    provider => "pkgdmg",
+  }
 }
