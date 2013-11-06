@@ -50,11 +50,6 @@ class people::ktf {
     mode    => '0755',
   }
 
-  file { "${home}/.mutt/cache/search/tmp":
-    ensure  => directory,
-    mode    => '0644',
-  }
-
   file { "${home}/.mutt/cache":
     ensure  => directory,
     mode    => '0644',
