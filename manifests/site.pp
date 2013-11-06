@@ -104,6 +104,7 @@ node default {
       'mpssh',
       'contacts',
       'elinks',
+      'libgit2',
     ]:
   }
   package {"mutt":
