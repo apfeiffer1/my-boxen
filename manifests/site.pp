@@ -118,6 +118,7 @@ node default {
        "Fabric",
        'PyGithub',
        'leveldb',
+       'virtualenv',
       ]:
     provider => pip
   }
