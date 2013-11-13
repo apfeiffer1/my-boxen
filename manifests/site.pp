@@ -158,7 +158,7 @@ node default {
   git::config::global { 'push.default': value  => 'current'}
   
   class { 'nodejs::global': version => 'v0.10.5' }
-  nodejs::module { ['hubot', 'coffee-script']: node_version => 'v0.10' }
+  nodejs::module { ['hubot', 'coffee-script', 'docpad']: node_version => 'v0.10' }
 
   package {'MaxTex':
     source => 'http://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg',
