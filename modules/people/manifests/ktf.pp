@@ -13,6 +13,10 @@ class people::ktf {
     source => 'ktf/latex'
   }
 
+  repository { "${home}/.solarized":
+    source => 'ktf/solarized'
+  }
+
   file { "${home}/.zshrc":
     ensure  => link,
     mode    => '0644',
