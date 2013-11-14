@@ -164,4 +164,9 @@ node default {
     source => 'http://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg',
     provider => "pkgdmg",
   }
+
+  package {'mesos':
+    source => 'http://downloads.mesosphere.io/master/osx/mesos-0.15.0-trunk-d20130921.pkg',
+    provider => "pkgdmg",
+  }
 }
